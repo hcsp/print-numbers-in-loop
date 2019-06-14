@@ -12,7 +12,7 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
         if(start<end){
-            for(int i = start;i<end;i++){
+            for(int i = start;i<=end;i++){
                 if(i%2!=0){
                     System.out.print(i + ",");
                 }
