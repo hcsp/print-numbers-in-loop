@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import com.sun.tools.javac.util.ArrayUtils;
-
 import java.util.ArrayList;
 
 public class Main {
