@@ -27,6 +27,6 @@ public class Main {
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
-        printOddNumbersBetween(-75, 75);
+        printOddNumbersBetween(-2, 2);
     }
 }
