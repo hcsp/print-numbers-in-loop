@@ -15,8 +15,13 @@ public class Main {
             if ( i%2 != 0 )
                 oddNumbers.append(i).append(",");
         }
-        if (oddNumbers.length() > 1)
+        if (oddNumbers.length() > 1){
+            if (oddNumbers.charAt(oddNumbers.length()-1) == ',') {
+                oddNumbers.deleteCharAt(oddNumbers.length()-1);
+            }
             System.out.println(oddNumbers);
+        }
+
     }
 
     public static void main(String[] args) {
