@@ -17,7 +17,7 @@ public class Main {
                 if(start <= end) {
                     continue;
                 }else {
-                    str += String.valueOf(end) + ",";
+                    str = "  ";
                 }
             }else {
                 //奇数+2还是奇数
@@ -30,7 +30,7 @@ public class Main {
                 }
             }
         }
-        System.out.println(str.substring(0,str.length()-1));
+        System.out.println(str.substring(0,str.length()-1).trim());
     }
 
     public static void main(String[] args) {
