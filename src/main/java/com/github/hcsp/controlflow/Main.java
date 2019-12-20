@@ -10,10 +10,10 @@ public class Main {
      * @param end 区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        StringBuffer oddNum = new StringBuffer();
+        StringBuilder oddNum = new StringBuilder();
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                oddNum.append(i+",");
+                oddNum.append(i).append(",");
             }
         }
         oddNum.deleteCharAt(oddNum.length() - 1);
