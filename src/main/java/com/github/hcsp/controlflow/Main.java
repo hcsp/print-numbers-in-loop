@@ -9,7 +9,18 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static void printOddNumbersBetween(int start, int end) {
+        start = start % 2 != 0 ? start : start + 1;
+        end = end % 2 != 0 ? end : end - 1;
+        //StringBuffer 和 StringBuilder 类的对象能够被多次的修改，并且不产生新的未使用对象
+        //StringBuilder比StringBuffer有速度优势,StringBuffer比StringBuilder有线程安全
+        StringBuilder str = new StringBuilder();
+        while (start <= end){
+            str.append(start).append(',');
+            start += 2;
+        }
+        System.out.println(str.substring(0, str.length() - 1));
+    }
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
