@@ -9,7 +9,21 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static void printOddNumbersBetween(int start, int end) {
+        /*
+            看了同学的答案，发现自己的代码可读性太差了
+            以下优化可读性，并去掉上一版没有处理字符串最后多余的“，”
+         */
+        StringBuilder str = new StringBuilder();
+        for (int i = start; i <=end ; i++) {
+            if (i %2 == 0) {
+                continue;
+            }
+            str.append(i).append(",");
+        }
+        //去掉最后多余的“，”
+        System.out.println(str.substring(0,(str.length()-1)));
+    }
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
