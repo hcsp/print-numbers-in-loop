@@ -12,8 +12,13 @@ public class Main {
     public static void printOddNumbersBetween(int start, int end) {
         for (int i = start; i <= end; i++) {
             if (i % 2 == 1 || i % 2 == -1) {
+                //结尾的end是单奇数
                 if (i == end) {
                     //只是Windows换行符
+                    System.out.print(i + "\n\r");
+                }
+                //结尾的end-1是单奇数
+                else if (i == end - 1) {
                     System.out.print(i + "\n\r");
                 } else {
                     System.out.print(i + ",");
