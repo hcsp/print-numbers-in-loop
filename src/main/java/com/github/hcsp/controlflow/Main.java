@@ -17,11 +17,11 @@ public class Main {
                 //结尾的end是单奇数
                 if (i == end) {
                     //换行
-                    System.out.print(i + "\n\r");
+                    System.out.print(i + "\n");
                 }
                 //结尾的end-1是单奇数
                 else if (i == end - 1) {
-                    System.out.print(i + "\n\r");
+                    System.out.print(i + "\n");
                 } else {
                     System.out.print(i + ",");
                 }
