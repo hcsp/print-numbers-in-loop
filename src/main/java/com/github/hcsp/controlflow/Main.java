@@ -11,7 +11,7 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
 
-        for(int x=start;x<=end;x=x+1){
+        for(int x=start;x<=end;++x){
             if (x%2!=0){
                 System.out.println(x);
             }
