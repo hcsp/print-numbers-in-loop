@@ -13,7 +13,7 @@ public class Main {
 
         for(int x=start;x<=end;++x){
             if (x%2!=0){
-                System.out.println(x);
+                System.out.print(x+",");
             }
         }
     }
