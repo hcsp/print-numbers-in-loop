@@ -14,11 +14,8 @@ public class Main {
         StringBuilder s = new StringBuilder();
         for (int i = start; i <= end; i = i + 1) {
             if (i % 2 != 0) {
-
                 s.append(i).append(",");
-
             }
-
         }
         System.out.println(s.substring(0, s.length() - 1));
     }
