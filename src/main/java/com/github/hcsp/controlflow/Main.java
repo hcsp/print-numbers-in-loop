@@ -21,7 +21,7 @@ public class Main {
         for (int i = 0; i < index ; i++) {
             System.out.print(a[i]+",");
         }
-        System.out.println(a[index-1]);
+        System.out.print(a[index-1]);
     }
 
     public static void main(String[] args) {
