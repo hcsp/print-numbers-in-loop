@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class MainTest {
     @Test
     @CaptureSystemOutput
-    public void importStringUtilsCorrectly(CaptureSystemOutput.OutputCapture capture) {
+    public void test(CaptureSystemOutput.OutputCapture capture) {
         int n = new Random().nextInt(100);
         capture.expect(
                 Matchers.equalToIgnoringCase(
