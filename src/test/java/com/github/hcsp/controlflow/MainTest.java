@@ -13,7 +13,7 @@ public class MainTest {
     public void test(CaptureSystemOutput.OutputCapture capture) {
         int n = new Random().nextInt(100);
         capture.expect(
-                Matchers.equalToIgnoringCase(
+                Matchers.containsStringIgnoringCase(
                         IntStream.range(-n, n + 1)
                                 .filter(i -> i % 2 != 0)
                                 .mapToObj(Integer::toString)
