@@ -16,14 +16,12 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
 
-
-        for (int i = start; i <= end; i++) { //把start 值赋给i 循环I直到与end一样大
-
-            if (i % 2 != 0) {    //筛选余2是否等于0 是则为质数输出
+        for (int i = start; i <= end; i++) {
+            if (i % 2 != 0) {
                 System.out.println(i);
-                if (start <= end - 1) {
-                    System.out.println(",");
-                }
+            }
+            if (i % 2 == 0) {
+                System.out.println(",");
             }
         }
 
