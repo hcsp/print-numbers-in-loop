@@ -17,27 +17,22 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
 
-
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                System.out.println(i);
-                /*if (i % 2 != 0) {
-                    System.out.println(",");*/
+                System.out.print(i);
                 if (start <= end - 1) {
-                    System.out.println(",");
-            }/*else {
-                System.out.println(",");*/
-
-
+                    System.out.print(",");
+                }
             }
         }
+
 
 
     }
 
     public static void main(String[] args) {
 
-       // printOddNumbersBetween(1, 5);
+         printOddNumbersBetween(1, 5);
         printOddNumbersBetween(-2, 2);
     }
 }
