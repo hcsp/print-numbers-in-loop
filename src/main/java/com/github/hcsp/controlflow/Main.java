@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     /**
@@ -16,12 +17,18 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
 
+
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);
-            }
-            if (i % 2 == 0) {
-                System.out.println(",");
+                /*if (i % 2 != 0) {
+                    System.out.println(",");*/
+                if (start <= end - 1) {
+                    System.out.println(",");
+            }/*else {
+                System.out.println(",");*/
+
+
             }
         }
 
@@ -29,7 +36,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        printOddNumbersBetween(1, 5);
+
+       // printOddNumbersBetween(1, 5);
         printOddNumbersBetween(-2, 2);
     }
 }
