@@ -21,7 +21,9 @@ public class Main {
 
             if (i%2!=0){    //筛选余2是否等于0 是则为质数输出
                 System.out.println(i);
-
+            if(i%2!=0){
+                System.out.println(",");
+            }
         }
     }
 
