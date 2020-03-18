@@ -1,5 +1,11 @@
 package com.github.hcsp.controlflow;
 
+import com.sun.deploy.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Main {
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
@@ -9,7 +15,16 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static void printOddNumbersBetween(int start, int end) {
+        for (int i = start; i <= end; i++) {
+            if (i % 2 != 0) {
+                if (i == end) {
+                    System.out.print(i + "");
+                } else
+                    System.out.print(" "+i + ",");
+            }
+        }
+    }
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
