@@ -19,9 +19,9 @@ public class Main {
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
                 if (i == end) {
-                    System.out.print(i + "");
+                    System.out.print(i + "\n");
                 } else
-                    System.out.print(" "+i + ",");
+                    System.out.print(i + ",");
             }
         }
     }
