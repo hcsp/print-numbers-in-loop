@@ -12,7 +12,7 @@ public class Main {
     public static void printOddNumbersBetween(int start, int end) {
         while (start <= end) {
             if (start % 2 != 0) {
-                System.out.println(start);
+                System.out.print(start+",");
             }
             start++;
         }
