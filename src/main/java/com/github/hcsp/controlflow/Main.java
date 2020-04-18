@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import com.sun.deploy.util.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
