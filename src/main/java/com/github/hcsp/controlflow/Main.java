@@ -28,8 +28,9 @@ public class Main {
                 comma = ",";
             }
         }
-        if (i % 2 != 0)
-        System.out.println(comma + i);
+        if (i % 2 != 0) {
+            System.out.println(comma + i);
+        }
     }
 
     public static void main(String[] args) {
