@@ -11,7 +11,7 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
        if(start % 2 ==0 && end % 2 == 0){
-           for (int i = start+1; i <end ; i+=1) {
+           for (int i = start+1; i <end ; i+=2) {
                System.out.print(i);
                if(i == end-1){
                    System.out.println("");
@@ -20,7 +20,7 @@ public class Main {
                }
            }
        }else if(start % 2 ==0 && end % 2 != 0){
-           for (int i = start+1; i <end+1 ; i+=1) {
+           for (int i = start+1; i <end+1 ; i+=2) {
                System.out.print(i);
                if(i == end){
                    System.out.println("");
@@ -29,7 +29,7 @@ public class Main {
                }
            }
        }else if(start % 2 != 0 && end % 2 == 0){
-           for (int i = start; i <end ; i+=1) {
+           for (int i = start; i <end ; i+=2) {
                System.out.print(i);
                if(i == end-1){
                    System.out.println("");
@@ -38,7 +38,7 @@ public class Main {
                }
            }
        }else{
-           for (int i = start; i <end+1 ; i+=1) {
+           for (int i = start; i <end+1 ; i+=2) {
                System.out.print(i);
                if(i == end){
                    System.out.println("");
