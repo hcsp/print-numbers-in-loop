@@ -13,7 +13,7 @@ public class Main {
         do {
             if (start % 2 != 0) {
 
-                System.out.println(start);
+                System.out.print(start+",");
             }
             start++;
         } while (start <= end) ;
