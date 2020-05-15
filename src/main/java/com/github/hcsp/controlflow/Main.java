@@ -10,7 +10,7 @@ public class Main {
      * @param end 区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        for (int i = start; i <= end; i++ ) {
+        for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
                 System.out.println(i == end ? i + "\n" : i + ",");
             }
