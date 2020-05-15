@@ -10,13 +10,19 @@ public class Main {
      * @param end 区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
+        String str = "";
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                System.out.println(i == end ? i + "\n" : i + ",");
+                if (str == "") {
+                    str += i;
+                } else {
+                    str += ",";
+                    str += i;
+                }
+                System.out.println(str);
             }
         }
     }
-
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
         printOddNumbersBetween(-2, 2);
