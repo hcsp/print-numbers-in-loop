@@ -14,9 +14,9 @@ public class Main {
             if (i % 2 == 0) {
                 continue;
             }
-            System.out.println(i);
+            System.out.print(i);
             if (i != end - 1 && i != end) {
-                System.out.println(",");
+                System.out.print(",");
             }
         }
         System.out.println();
