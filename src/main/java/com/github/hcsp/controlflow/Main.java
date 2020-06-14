@@ -13,9 +13,8 @@ public class Main {
         for (int i = start; i <= end ; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);
-                if (i != (end - 1) && i != end ) {
+                if (i != (end - 1) && i != end )
                     System.out.println(",");
-                }
             }
         }
         System.out.println();
