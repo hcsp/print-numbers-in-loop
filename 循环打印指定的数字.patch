@@ -1,0 +1,24 @@
+Index: src/main/java/com/github/hcsp/controlflow/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/github/hcsp/controlflow/Main.java	(revision f1d6fc4d72191a2a652cfda65a09001589e97a9e)
++++ src/main/java/com/github/hcsp/controlflow/Main.java	(date 1592103787037)
+@@ -9,7 +9,15 @@
+      * @param start 区间开始
+      * @param end 区间结束
+      */
+-    public static void printOddNumbersBetween(int start, int end) {}
++    public static void printOddNumbersBetween(int start, int end) {
++        for (int i = start; i <= end ; i++) {
++            if (i % 2 != 0) {
++                System.out.println(i);
++                System.out.println(",");
++            }
++        }
++
++    }
+ 
+     public static void main(String[] args) {
+         printOddNumbersBetween(1, 5);
