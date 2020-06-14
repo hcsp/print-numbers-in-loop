@@ -13,10 +13,12 @@ public class Main {
         for (int i = start; i <= end ; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);
-                System.out.println(",");
+                if (i != (end - 1) && i != end ) {
+                    System.out.println(",");
+                }
             }
         }
-
+        System.out.println();
     }
 
     public static void main(String[] args) {
