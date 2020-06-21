@@ -1,5 +1,8 @@
 package com.github.hcsp.controlflow;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
@@ -14,10 +17,13 @@ public class Main {
             start += 1;
         }
         while (start <= end) {
-            System.out.println(start);
-            start += 2;
+            if (start == end || start == end - 1) {
+                System.out.print(start);
+            }else {
+                System.out.print(start+",");
+            }
+                start += 2;
         }
-
     }
 
     public static void main(String[] args) {
