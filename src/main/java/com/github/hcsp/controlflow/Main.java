@@ -1,6 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import sun.lwawt.macosx.CSystemTray;
 
 public class Main {
     /**
@@ -14,7 +13,7 @@ public class Main {
     public static void printOddNumbersBetween(int start, int end) {
         StringBuilder msg = new StringBuilder();
         for(int i = start; i <= end; i++){
-            if(i % 2 != 0){
+            if (i % 2 != 0) {
                 msg.append(i).append(",");
             }
         }
