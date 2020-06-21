@@ -1,5 +1,6 @@
 package com.github.hcsp.controlflow;
 
+
 public class Main {
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
@@ -9,7 +10,16 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static void printOddNumbersBetween(int start, int end) {
+        StringBuilder msg = new StringBuilder();
+        for(int i = start; i <= end; i++){
+            if (i % 2 != 0) {
+                msg.append(i).append(",");
+            }
+        }
+        msg.deleteCharAt(msg.length() - 1);
+        System.out.println(msg);
+    }
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
