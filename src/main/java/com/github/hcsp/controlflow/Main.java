@@ -7,20 +7,21 @@ public class Main {
      *
      * <p>例如，start=1,end=5，则打印1,3,5 又如，start=-2,end=2，则打印-1,1
      *
-     * @param start 区间开始
+     * @param i 区间开始
      * @param end   区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        if (start % 2 == 0) {
-            start += 1;
+        int i = start;
+        if (i % 2 == 0) {
+            i += 1;
         }
-        while (start <= end) {
-            if (start == end || start == end - 1) {
-                System.out.print(start);
+        while (i <= end) {
+            if (i == end || i == end - 1) {
+                System.out.print(i);
             } else {
-                System.out.print(start + ",");
+                System.out.print(i + ",");
             }
-            start += 2;
+            i += 2;
         }
     }
 
