@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     /**
@@ -19,10 +17,10 @@ public class Main {
         while (start <= end) {
             if (start == end || start == end - 1) {
                 System.out.print(start);
-            }else {
-                System.out.print(start+",");
+            } else {
+                System.out.print(start + ",");
             }
-                start += 2;
+            start += 2;
         }
     }
 
