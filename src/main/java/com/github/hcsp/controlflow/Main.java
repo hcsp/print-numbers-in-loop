@@ -7,25 +7,9 @@ public class Main {
      * <p>例如，start=1,end=5，则打印1,3,5 又如，start=-2,end=2，则打印-1,1
      *
      * @param start 区间开始
-     * @param end   区间结束
+     * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {
-        String result = "";
-        for (int i = start; i <= end; i++) {
-            if (isOdd(i)) {
-                result += i + ",";
-            }
-        }
-        if (result.length() > 0)
-            result = result.substring(0, result.length() - 1);
-        System.out.println(result);
-    }
-
-    private static final int ODD = 0x1;
-
-    public static boolean isOdd(int num) {
-        return (num & ODD) != 0;
-    }
+    public static void printOddNumbersBetween(int start, int end) {}
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
