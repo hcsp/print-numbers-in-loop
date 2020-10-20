@@ -10,11 +10,20 @@ public class Main {
      * @param end   区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        System.out.print(start);
-        for (int i = start + 1; i <= end; i++) {
-            System.out.print("," + i);
+        String result = "";
+        for (int i = start; i <= end; i++) {
+            if (isOdd(i)) {
+                result += i + ",";
+            }
         }
-        System.out.println("");
+        result = result.substring(0, result.length() - 1);
+        System.out.println(result);
+    }
+
+    private static final int ODD = 0x1;
+
+    public static boolean isOdd(int num) {
+        return (num & ODD) != 0;
     }
 
     public static void main(String[] args) {
