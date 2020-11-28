@@ -10,9 +10,10 @@ public class Main {
      * @param end   区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
+
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                System.out.print(i == end ? i + "\n" : i + ",");
+                System.out.print(i == ((end % 2 != 0) ? end : end - 1) ? i + "\n" : i + ",");
             }
         }
     }
