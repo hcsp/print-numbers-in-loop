@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import com.sun.deploy.util.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +19,7 @@ public class Main {
                 list.add(String.valueOf(i));
             }
         }
-        System.out.println(StringUtils.join(list, ","));
+        System.out.println(String.join(",", list));
     }
 
     public static void main(String[] args) {
