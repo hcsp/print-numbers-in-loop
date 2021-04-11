@@ -14,7 +14,7 @@ public class Main {
         int a = end;
         while (i<=a){
             if (i%2==1||i%2==-1){
-                System.out.print(i+"\t");
+                System.out.print(i + ",");
                 i++;
             }
             i++;
