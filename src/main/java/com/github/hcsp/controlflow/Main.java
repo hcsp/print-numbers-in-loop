@@ -1,5 +1,7 @@
 package com.github.hcsp.controlflow;
 
+import java.sql.SQLOutput;
+
 public class Main {
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
@@ -13,7 +15,9 @@ public class Main {
 
         for (int i = Math.min(start, end); i <= Math.max(start, end); i++) {
             if (i % 2 != 0) {
-                System.out.print(i + " ");
+                System.out.print(i);
+            } else if ((i != start) && (i != end)) {
+                System.out.print(",");
             }
         }
         System.out.println();
