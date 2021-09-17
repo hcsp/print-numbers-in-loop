@@ -9,27 +9,7 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {
-
-        String s = " ";
-
-        for(int i = start; i <= end ; i++) {
-            if(i%2==0) {
-
-                continue;
-
-            }else{
-                if(i != end && end - i >1) {
-                    s = s + i + ",";
-                }else{
-                    s += i;
-                }
-            }
-        }
-
-        System.out.println(s);
-
-    }
+    public static void printOddNumbersBetween(int start, int end) {}
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
