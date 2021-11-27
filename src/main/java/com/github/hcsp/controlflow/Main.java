@@ -11,8 +11,12 @@ public class Main {
      */
     public static void printOddNumbersBetween(int start, int end) {
         for (int i = start; i <= end; i++) {
-            System.out.print(i + ",");
-         }
+            if (!((i % 2) == 0)) {
+
+                System.out.print(i + ",");
+
+            }
+        }
     }
 
     public static void main(String[] args) {
