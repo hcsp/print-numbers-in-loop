@@ -16,7 +16,7 @@ public class Main {
                 System.out.print(start);
                 if (start < end) {
                     System.out.print(",");
-                    
+
                 }
             }
             ++ start;
