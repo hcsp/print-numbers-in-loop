@@ -9,7 +9,15 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static int countUpperCaseLetters(String str) {
+        int n = 0;
+        for (int i =0;i<str.length();i++){
+            if(str.charAt(i) >= 'A' & str.charAt(i) <= 'Z'){
+                n += 1;
+            }
+        }
+        return n;
+    }
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
