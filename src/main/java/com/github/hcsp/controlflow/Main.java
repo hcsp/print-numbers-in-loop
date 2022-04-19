@@ -10,11 +10,14 @@ public class Main {
      * @param end 区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        for (int i = start;i<=end;i++){
+        String s = "";
+        for (int i = start;i<=end;++i){
             if(i % 2 != 0){
-                System.out.println(i);
+                s +=  i + ",";
             }
         }
+        s = s.substring(0,s.length()-1);
+        System.out.println(s);
     }
 
     public static void main(String[] args) {
