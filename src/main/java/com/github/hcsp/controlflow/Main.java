@@ -9,10 +9,23 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
-
-    public static void main(String[] args) {
-        printOddNumbersBetween(1, 5);
-        printOddNumbersBetween(-2, 2);
+    public static void printOddNumbersBetween(int start, int end) {
+        StringBuilder result = new StringBuilder(); //一开始我只是想用","将结果拼接在一起,结果Java中没有像python那种strip的方法
+                                                    // 只能用StringBuilder
+        for (int i = start; i <= end; i++) {
+            if (i % 2 != 0) {
+                result.append(i).append(",");      //一开始想的是%2==0的时候continue来跳过偶数
+                                                    // 用了string Builder之后是将奇数append起来
+            }
+        }
+        if (result.length()>0){
+            result.deleteCharAt(result.length() -1);
+        }
+        System.out.println(result);
     }
-}
+
+            public static void main (String[]args){
+                printOddNumbersBetween(1, 5);
+                printOddNumbersBetween(-2, 2);
+            }
+        }
